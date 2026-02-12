@@ -27,6 +27,15 @@ class Dog:
             return None
     
     @classmethod
+    def display_dogs(cls):
+        print("""
+                Here's Our List of dogs
+                -----------------------
+                """)
+        for dog in cls.available_dogs:
+             print(dog)
+    
+    @classmethod
     def create_dog_from_user(cls):
         data_dict = {
             "name":input("Please provide a name:\n"), 
